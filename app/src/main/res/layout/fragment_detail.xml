@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.DetailFragment">
+
+    <TextView
+        android:id="@+id/repository_name_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titleTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/repository_owner_avatar_imageView"
+        android:layout_width="@dimen/avatarImageSize"
+        android:layout_height="@dimen/avatarImageSize"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repository_name_textView" />
+
+    <TextView
+        android:id="@+id/repository_owner_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/baseSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:text="@string/repositoryDetailBy"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintStart_toEndOf="@+id/repository_owner_avatar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/repository_name_textView" />
+
+    <TextView
+        android:id="@+id/repository_owner_name_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smallSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/repository_owner_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/repository_name_textView" />
+
+    <TextView
+        android:id="@+id/repository_description_label_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:text="@string/repositoryDetailDescription"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repository_owner_avatar_imageView" />
+
+    <TextView
+        android:id="@+id/repository_description_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repository_description_label_textView" />
+
+    <TextView
+        android:id="@+id/repository_forks_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:text="@string/repositoryDetailForks"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repository_description_textView" />
+
+    <TextView
+        android:id="@+id/repository_forks_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smallSpace"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/baseSpace"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/repository_forks_label_textView"
+        app:layout_constraintTop_toBottomOf="@+id/repository_description_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

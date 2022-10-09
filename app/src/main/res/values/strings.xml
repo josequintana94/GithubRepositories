@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Github Repositories</string>
+    <string name="homeTitle">Github Kotlin Repositories</string>
+    <string name="homeEmptyList">List is empty</string>
+    <string name="repositoryDetailBy">by</string>
+    <string name="repositoryDetailDescription">Description</string>
+    <string name="repositoryDetailForks">Forks</string>
+    <string name="footerError">Error loading list, please retry</string>
+    <string name="footerRetry">Retry</string>
+</resources>

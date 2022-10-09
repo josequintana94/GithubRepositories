@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'androidx.navigation.safeargs') {
+                useModule("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2")
+            }
+            if (requested.id.id == 'com.google.dagger.hilt') {
+                useModule("com.google.dagger:hilt-android-gradle-plugin:2.28-alpha")
+            }
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Github Repositories"
+include ':app'
